@@ -42,18 +42,18 @@ import ffmpeg
 # Initialize the bot
 bot = Client(
     "bot",
-    api_id=27479878,
-    api_hash=487bf4aaba77083282241c0498cdde91",
-    bot_token=8326037892:AAH52o13ZCPMMMeSvYehHm_o6M2w3JWtl30
+    api_id="24411134",
+    api_hash="da78963da6eaaf521133e00628434271",
+    bot_token="8326037892:AAH52o13ZCPMMMeSvYehHm_o6M2w3JWtl30"
 )
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5680454765').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '8264213982').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
     
-CHANNEL_OWNERS = {7850114307}
-CHANNELS = os.environ.get('CHANNELS', '-1002714591419').split(',')
+CHANNEL_OWNERS = {8264213982}
+CHANNELS = os.environ.get('CHANNELS', '8264213982').split(',')
 CHANNELS_LIST = [int(channel_id) for channel_id in CHANNELS if channel_id.isdigit()]
 
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
